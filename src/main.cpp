@@ -1,13 +1,1 @@
-// DEST: src/main.cpp
-#include <iostream>
-#include "demo/hello.hpp"
-
-int main() {
-    std::cout << "=== Waterbutt Demo Main v2 (countdown) ===" << std::endl;
-    for (int i = 3; i >= 1; --i) {
-        std::cout << "Countdown: " << i << std::endl;
-    }
-    hello();
-    std::cout << "=== Finished v2 ===" << std::endl;
-    return 0;
-}
+// DEST: src/main.cpp#include <iostream>#include "demo/hello.hpp"int main() {    std::cout << "=== Waterbutt Controller Demo v11 ===" << std::endl;    std::cout << "🔥 ChatGPT is ace — controller app test v11 🔥" << std::endl;    hello();    std::cout << "=== Finished v11 ===" << std::endl;    return 0;}

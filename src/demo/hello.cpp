@@ -1,1 +1,2 @@
-// DEST: src/demo/hello.cpp#include <iostream>void hello(){ std::cout << "[demo] hello() says hi" << std::endl; }
+#include <iostream>
+void hello(){ std::cout << "[demo] hello() says hi" << std::endl; }
