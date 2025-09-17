@@ -1,1 +1,3 @@
-// DEST: src/main.cpp#include <iostream>void hello();int main(){    std::cout << "=== Waterbutt Demo Main (calls hello) ===\n";    hello();    std::cout << "=== Done ===\n";    return 0;}
+cd ~/Dev/waterbutt-pi5
+~/apply_clipboard_file.sh src/main.cpp
+head -n 12 src/main.cpp
