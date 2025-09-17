@@ -1,3 +1,13 @@
-cd ~/Dev/waterbutt-pi5
-~/apply_clipboard_file.sh src/main.cpp
-head -n 12 src/main.cpp
+// DEST: src/main.cpp
+#include <iostream>
+#include "demo/hello.hpp"
+
+int main() {
+    std::cout << "=== Waterbutt Demo Main v2 (countdown) ===" << std::endl;
+    for (int i = 3; i >= 1; --i) {
+        std::cout << "Countdown: " << i << std::endl;
+    }
+    hello();
+    std::cout << "=== Finished v2 ===" << std::endl;
+    return 0;
+}

@@ -1,0 +1,1 @@
+// DEST: src/main.cpp#include <iostream>#include "demo/hello.hpp"int main(){    std::cout << "=== Waterbutt Demo Main (calls hello) ===\n";    hello();    std::cout << "=== Done ===\n";    return 0;}
