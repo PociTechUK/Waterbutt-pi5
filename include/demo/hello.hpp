@@ -1,3 +1,2 @@
-// DEST: include/demo/hello.hpp
-#pragma once
-void hello();
+cd ~/Dev/waterbutt-pi5
+~/apply_clipboard_file.sh include/demo/hello.hpp
