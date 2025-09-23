@@ -1,17 +1,20 @@
-$(info USING NEW MAKEFILE v3)
-CXX ?= g++
-CXXFLAGS ?= -O2 -std=gnu++17 -DNDEBUG
-CXXFLAGS += -Iinclude
-SRC := $(shell find src -name '*.cpp')
-OBJ := $(SRC:%.cpp=%.o)
-BIN := .build/program
+CXX := g++
+CXXFLAGS := -Wall -Wextra -O2 -std=c++17
+
+SRC := $(wildcard src/*.cpp)
+OBJ := $(SRC:.cpp=.o)
+BIN := bin/wb_app
+
 all: $(BIN)
+
 $(BIN): $(OBJ)
 	@mkdir -p $(dir $@)
-	@echo "Linking -> $(BIN)"
-	$(CXX) $(CXXFLAGS) -o $@ $(OBJ)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
 %.o: %.cpp
-	@echo "Compiling -> $<"
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
 clean:
-	rm -rf .build $(OBJ)
+	rm -f src/*.o $(BIN)
+
+.PHONY: all clean

@@ -6,7 +6,7 @@
 
 namespace wb {
     constexpr const char* kAppName = "Waterbutt Controller";
-    constexpr const char* kVersion = "0.1-stub";
+    constexpr const char* kVersion = "0.3-stub";
 
     int run(int argc, char** argv) {
         std::cout << "----------------------------------------\n";
