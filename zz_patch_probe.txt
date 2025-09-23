@@ -1,0 +1,4 @@
+probe=ok
+timestamp=PLACEHOLDER
+note=if you can read this, git apply worked
+eof
