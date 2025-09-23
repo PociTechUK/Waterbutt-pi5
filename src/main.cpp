@@ -10,6 +10,7 @@ namespace wb {
         std::cout << "----------------------------------------\n";
         std::cout << kAppName << " (" << kVersion << ")\n";
         std::cout << "Hello from NUC! 🚀\n";
+        std::cout << "Extra NUC status line here ✅\n";
         std::cout << "----------------------------------------\n";
         return 0;
     }
