@@ -1,21 +1,15 @@
-// WB-REPO-SIG: Waterbutt-pi5 | file: src/main.cpp | base-stub
-// Minimal starting point. Replace or expand with real controller/UI logic.
-
+// WB-REPO-SIG: Waterbutt-pi5 | file: src/main.cpp | hello-test
 #include <iostream>
 #include <string>
 
 namespace wb {
     constexpr const char* kAppName = "Waterbutt Controller";
-    constexpr const char* kVersion = "0.4-stub";
+    constexpr const char* kVersion = "0.11-hello";
 
-    int run(int argc, char** argv) {
+    int run(int /*argc*/, char** /*argv*/) {
         std::cout << "----------------------------------------\n";
         std::cout << kAppName << " (" << kVersion << ")\n";
-        std::cout << "Args:";
-        for (int i = 0; i < argc; ++i) {
-            std::cout << " [" << i << "]=" << (argv[i] ? argv[i] : "");
-        }
-        std::cout << "\nBuild OK. Replace this stub with real app logic.\n";
+        std::cout << "Hello from NUC! 🚀\n";
         std::cout << "----------------------------------------\n";
         return 0;
     }
