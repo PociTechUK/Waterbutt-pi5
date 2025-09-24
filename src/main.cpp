@@ -4,7 +4,7 @@
 
 namespace wb {
     constexpr const char* kAppName = "Waterbutt Controller";
-    constexpr const char* kVersion = "0.13-nuc";
+    constexpr const char* kVersion = "0.14-nuc";
 
     int run(int /*argc*/, char** /*argv*/) {
         std::cout << "----------------------------------------\n";
