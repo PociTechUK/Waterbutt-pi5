@@ -1,0 +1,4 @@
+This is a WB-Control test patch.
+If you see this file, git apply worked.
+Timestamp: PLACEHOLDER
+EOF

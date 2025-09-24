@@ -1,20 +1,20 @@
-CXX := g++
-CXXFLAGS := -Wall -Wextra -O2 -std=c++17
+CXX      = g++
+CXXFLAGS = -Wall -Wextra -O2 -std=c++17
+LDFLAGS  =
+# add -lm because GLUT bitmap helpers may pull math
+LDLIBS = -lglfw -lGL -lglut -lm -ldl -lpthread -lX11 -lXrandr -lXi
 
-SRC := $(wildcard src/*.cpp)
-OBJ := $(SRC:.cpp=.o)
-BIN := bin/wb_app
+SRC = $(wildcard src/*.cpp)
+OBJ = $(SRC:.cpp=.o)
+BIN = bin/wb_app
 
 all: $(BIN)
 
-$(BIN): $(OBJ)
-	@mkdir -p $(dir $@)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+bin:
+	@mkdir -p bin
 
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+$(BIN): $(OBJ) | bin
+	$(CXX) $(CXXFLAGS) -o $@ $(OBJ) $(LDFLAGS) $(LDLIBS)
 
 clean:
-	rm -f src/*.o $(BIN)
-
-.PHONY: all clean
+	rm -f $(OBJ) $(BIN)

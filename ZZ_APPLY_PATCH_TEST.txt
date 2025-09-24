@@ -1,0 +1,4 @@
+This is a WB-Control apply_patch test.
+If you see this file in git status, apply_patch() worked.
+Timestamp: PLACEHOLDER
+EOF
